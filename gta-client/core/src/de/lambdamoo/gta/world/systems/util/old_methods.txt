@@ -1,0 +1,55 @@
+RenderSystem:
+   /**
+     * This method renders the TileMap to the screen
+     *
+     * @param tilesMap
+     */
+    protected void renderMap(TilesMap tilesMap, int offsetTileX, int offsetTileY, int tilesCountX, int tilesCountY) {
+        for (int y = 0; y < tilesCountY; y++) {
+            for (int x = 0; x < tilesCountX; x++) {
+                TextureRegion spriteImage = getTextureRegionForSprite(tilesMap, x, y);
+                if (spriteImage != null) {
+                    batch.draw(spriteImage, ((x + offsetTileX) * 8), ((y + offsetTileY) * 8));
+                } else {
+                    MyLogger.getInstance().log("RenderSystem", "image is null: " + x + "/" + y);
+                }
+            }
+        }
+    }
+
+   private TextureRegion getTextureRegionForSprite(TilesMap tilesMap, int xTile, int yTile) {
+        Tile tile = tilesMap.getTileAt(xTile, yTile);
+        TextureRegion sprite = null;
+        if (tile.isVisible()) {
+            switch (tile.getTileType()) {
+                case Tile.CELL_DOOR:
+                    sprite = spriteImages.getLevelObject(tilesMap.getLevel(), 2);
+                    break;
+                case Tile.CELL_WALL:
+                    sprite = spriteImages.getLevelObject(tilesMap.getLevel(), 0);
+                    break;
+                case Tile.CELL_HIDDENDOOR:
+                    sprite = spriteImages.getLevelObject(tilesMap.getLevel(), 1);
+                    break;
+                case Tile.CELL_FLOOR:
+                    sprite = spriteImages.getTextureNonLevel(0);
+                    break;
+                case Tile.CELL_UNWALKABLE:
+                    sprite = spriteImages.getTextureNonLevel(1);
+                    break;
+                case Tile.CELL_DOOR_OPENED:
+                    sprite = spriteImages.getTextureNonLevel(0);
+                    break;
+            }
+        } else {
+            sprite = spriteImages.getTextureNonLevel(1);
+        }
+        return sprite;
+    }
+
+
+     btnCtrlUp = new TextureRegionDrawable(atlas.findRegion("icons8-eingekreistes-rangabzeichen-up-96"));
+            btnCtrlDown = new TextureRegionDrawable(atlas.findRegion("icons8-eingekreistes-rangabzeichen-down-96"));
+            btnCtrlLeft = new TextureRegionDrawable(atlas.findRegion("icons8-eingekreistes-rangabzeichen-left-96"));
+            btnCtrlRight = new TextureRegionDrawable(atlas.findRegion("icons8-eingekreistes-rangabzeichen-right-96"));
+            btnCtrlFire = new TextureRegionDrawable(atlas.findRegion("icons8-eingekreistes-rangabzeichen-fire-96"));

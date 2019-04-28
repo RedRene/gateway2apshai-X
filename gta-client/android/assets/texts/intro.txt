@@ -1,0 +1,7 @@
+Welcome to Gateway to Apshai X.
+
+After entering a dungeon your objective is to successfully complete all eight levels, scoring as many points as you can.
+
+You complete each level by moving your figure on the screen through a dungeon maze, fighting off monsters and avoiding traps, while picking up treasures in order to score points.
+
+This game was developed by Rene Frerichs in 2019.
