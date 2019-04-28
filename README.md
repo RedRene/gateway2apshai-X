@@ -1,37 +1,13 @@
-## Welcome to GitHub Pages
+## Welcome to Gateway to Apshai X
 
-You can use the [editor on GitHub](https://github.com/RedRene/return-to-gateway/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Gateway to Apshai X is the remake of the action-adventure game for the Commodore 64, ColecoVision and Atari 8-bit family, developed by The Connelley Group and published by Epyx as a prequel to Temple of Apshai. It is a more action-oriented version of Temple of Apshai, with smoother and faster graphics routines, more intuitive controls, fewer role-playing video game elements, and fewer room descriptions. The remake can be downloaded from the play store and played on Android devices.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+You can read additional descriptions on the homepage: http://gta.dragon-tale.com 
 
-### Markdown
+### Source code
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The application is developed in Java with LibGDX library and you find the necessary source code in this repository. You need the Android Studio (currently Version 3.4) to compile, build and run. Build management is done with gradle plugin.
 
-```markdown
-Syntax highlighted code block
+Few of the art is taken from Wesnoth https://www.wesnoth.org/, the game specific art is taken from the decompilation of Kroah http://bringerp.free.fr/RE/ 
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/RedRene/return-to-gateway/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Have a lot of fun with the game and  the source code.
