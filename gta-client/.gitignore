@@ -1,5 +1,7 @@
 ## General private files
 /android/assets/gateway-to-apshai-*.json
+/android/google-services.json
+
 
 ## Java
 
