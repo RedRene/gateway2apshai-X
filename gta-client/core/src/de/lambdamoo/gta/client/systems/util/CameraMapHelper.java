@@ -10,7 +10,6 @@ import de.lambdamoo.gta.client.util.MyLogger;
 import de.lambdamoo.gta.world.components.Position;
 
 public class CameraMapHelper {
-    private static final String TAG = CameraMapHelper.class.getName();
     private final float MAX_ZOOM_IN = 0.25f;
     private final float MAX_ZOOM_OUT = 2.0f;
     private OrthographicCamera cameraMap;
