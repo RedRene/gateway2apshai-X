@@ -747,8 +747,6 @@ public class GameWorld {
         return map.getLevel();
     }
 
-    /*The ModelBatch is one of the objects, which require disposing, hence we
-      add it to the dispose function. */
     public void dispose() {
         if (renderSystem != null) {
             renderSystem.dispose();

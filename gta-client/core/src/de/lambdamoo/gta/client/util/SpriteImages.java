@@ -62,11 +62,11 @@ public class SpriteImages {
     private TextureRegionDrawable btnDelete = null;
     private TextureRegionDrawable btnEquip = null;
     private TextField.TextFieldStyle textFieldStyle = null;
+    private Label.LabelStyle labelStyle32 = null;
     private Label.LabelStyle labelStyle48 = null;
     private Label.LabelStyle labelStyle64 = null;
     private Label.LabelStyle labelStyleHeadline = null;
     private Label.LabelStyle labelStyleHeadlineSmall = null;
-    private Label.LabelStyle labelStyle32 = null;
     private Slider.SliderStyle sliderStyle = null;
     private TextureAtlas atlasGameUI = null;
     private TextureAtlas atlasDialog = null;
